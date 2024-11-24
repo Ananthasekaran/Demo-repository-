@@ -1,3 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Navigation Bar</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img
+          src="https://www.aristobrat.in/cdn/shop/files/Aristobrat_Logo_2022_Website_Black_c999e058-89c6-4a86-af94-cdba4daa9f39.png?v=1654584584&width=280"
+          alt="Aristobrat Logo"
+        />
+      </div>
+
+      <a href="login.html" class="login">Login</a>
+
+      <div class="menu-container">
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#new-brand">New Brand</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section id="home" class="hero">
+        <h1>Welcome to Our Store!</h1>
+        <p>Discover the best products at unbeatable prices.</p>
+        <a href="#shop" class="cta-button">Shop Now</a>
+      </section>
+
+      <section id="shop" class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-card">
+          <img
+            src="https://www.aristobrat.in/cdn/shop/files/BusinessClassShirt_White9.jpg?v=1724325491&width=1080"
+            alt="Business Class Shirt in White"
+          />
+          <h3>Product 1</h3>
+          <p>$29.99</p>
+          <a href="#product1" class="buy-button">Buy Now</a>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://www.aristobrat.in/cdn/shop/files/BusinessClassShirt_FrenchBlue4.jpg?v=1724305842&width=1080"
+            alt="Business Class Shirt in French Blue"
+          />
+          <h3>Product 2</h3>
+          <p>$49.99</p>
+          <a href="#product2" class="buy-button">Buy Now</a>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://www.aristobrat.in/cdn/shop/files/BusinessClassShirt_Black8.jpg?v=1724305819&width=1080"
+            alt="Business Class Shirt in Black"
+          />
+          <h3>Product 3</h3>
+          <p>$19.99</p>
+          <a href="#product3" class="buy-button">Buy Now</a>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>
+          We are dedicated to providing you with the best products and service.
+        </p>
+      </section>
+    </main>
+
+    <script>
+      document.getElementById("hamburger").onclick = function () {
+        var navLinks = document.getElementById("nav-links");
+        navLinks.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
 {
     "liveServer.settings.port": 5501
 }
